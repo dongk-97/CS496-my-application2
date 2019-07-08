@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.Resultpage"
+    >
+
+    <RelativeLayout
+        android:id="@+id/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/blue"
+            android:background="@android:color/holo_purple"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/TimeDateInfo"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="casual"
+                android:text="2017-04-18"
+                android:textColor="#FFF"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TimeDateInfo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_WeatherInfo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Today's Weather"
+                    android:textColor="#FFF"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:fontFamily="casual"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:text=" " />
+
+
+        <TextView
+            android:id="@+id/tv_Taginfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blue"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/space"
+            android:fontFamily="casual"
+            android:text="Temperature"
+            android:textColor="#9C14B3"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+
+        <TextView
+            android:id="@+id/tv_WeatherInfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blue"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/space"
+            android:fontFamily="casual"
+            android:text="Today's Weather"
+            android:textColor="#0C0101"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/tv_Taginfo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Taginfo1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/space"
+            android:fontFamily="casual"
+            android:text="Humidity"
+            android:textColor="#9C14B3"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+
+        <TextView
+            android:id="@+id/tv_WeatherInfo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_WeatherInfo1"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/space"
+            android:fontFamily="casual"
+            android:text="Today's Weather"
+            android:textColor="#0C0101"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/tv_Taginfo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Taginfo2"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/space"
+            android:fontFamily="casual"
+            android:text="Wind"
+            android:textColor="#9C14B3"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+
+        <TextView
+            android:id="@+id/tv_WeatherInfo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_WeatherInfo2"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/space"
+            android:fontFamily="casual"
+            android:text="Today's Weather"
+            android:textColor="#0C0101"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/tv_Taginfo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Taginfo3"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/space"
+            android:fontFamily="casual"
+            android:text="Clouds"
+            android:textColor="#9C14B3"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+
+        <TextView
+            android:id="@+id/tv_WeatherInfo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_WeatherInfo3"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/space"
+            android:fontFamily="casual"
+            android:text="Today's Weather"
+            android:textColor="#0C0101"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/tv_Taginfo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Taginfo4"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/space"
+            android:fontFamily="casual"
+            android:text="Precipitation"
+            android:textColor="#9C14B3"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+
+        <TextView
+            android:id="@+id/tv_WeatherInfo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_WeatherInfo4"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_toRightOf="@+id/space"
+            android:fontFamily="casual"
+            android:text="Today's Weather"
+            android:textColor="#0C0101"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/blue2"
+            android:background="@android:color/holo_purple"
+            android:layout_below="@id/tv_WeatherInfo5"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_WeatherInfo7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="casual"
+                    android:text="Today's Style"
+                    android:textColor="#FFF"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_alignTop="@id/image_pants"
+            android:id="@+id/image_top"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/blue2"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@id/image_pants"/>
+
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text = "top"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:layout_below="@id/image_top"
+            android:layout_alignLeft="@id/image_top"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:id="@+id/image_pants"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/blue2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text = "pants"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:layout_below="@id/image_pants"
+            android:layout_alignLeft="@id/image_pants"/>
+
+        <ImageView
+            android:layout_alignTop="@id/image_pants"
+            android:id="@+id/image_shoes"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/blue2"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/image_pants"/>
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text = "shoes"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:layout_below="@id/image_shoes"
+            android:layout_alignLeft="@id/image_shoes"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/top_text"
+            android:layout_centerHorizontal="true"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:text="From "
+                    android:textColor="#0C0101"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="openweathermap"
+                    android:textColor="#0C0101"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="share"
+            android:fontFamily="casual"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
