@@ -431,9 +431,11 @@ public class MainFragment3Activity extends AppCompatActivity {
         }else if(10<=temp && temp<20){
             return "soso";
 
-        }else if(20<=temp && temp<35){
+        }
+        else if(20<=temp && temp<35){
             return "hot";
-        }else{
+        }
+        else{
             return "veryhot";
         }
     }
